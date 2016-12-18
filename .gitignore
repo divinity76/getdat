@@ -1,0 +1,5 @@
+#eclipse files.. should probably go in $GIT_DIR/info/exclude instead..
+/.buildpath
+/.project
+/.settings
+
