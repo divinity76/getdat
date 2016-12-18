@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+body{
+	color: white;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	font-family: Raleway;
+	background: #101010;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.header{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	background: #303030;
+	align-items: center;
+	overflow: hidden;
+}
+
+.social{
+	display: flex;
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+.social > .sociallink:not(:last-child){
+	margin-right: 15px;
+}
+
+.sociallink{
+	font-size: 30pt !important;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.sociallink:hover{
+	color: slategray;
+}
+
+.logo{
+	color: white;
+	margin-left: 10px;
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: 0.6s ease-in;
+	font-size: 24pt;
+}
+
+.logo:hover{
+	background: #ccc;
+	color: #000;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width: 100%;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	background: #101010;
+	flex: 1 0 auto;
+	padding: 90px 0 20px 0;
+	box-sizing: border-box;
+}
+
+.features > .feature:not(:last-child){
+	margin-right: 20px;
+}
+
+.heading{
+	text-align: center;
+	font-size: 30pt;
+}
+
+.upload{
+	margin: 50px auto;
+	padding: 50px;
+	text-align: center;
+	width: 500px;
+	border: 2px dashed white;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.features{
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	margin: 0 auto;
+	font-weight: 300;
+	align-items: center;
+	justify-content: center;
+}
+
+.feature{
+	display: flex;
+	flex-direction: column;
+	width: 128px;
+	color: white;
+	text-align: center;
+	margin: 10px;
+}
+
+.feature > h3{
+	margin-top: 1.5em;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.feature > .feature-heading{
+	font-size: 1em;
+	width: 128px;
+	color: #888;
+	margin: 0;	
+	margin: 10px 0;
+}
+
+.feature > p{
+	font-size: .8em;
+}
+
+.featureicon > i{
+	font-size: 25pt;
+}
+
+
+.featureicon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	width: 64px;
+	height: 64px;
+	color: white;
+}
+
+.footer{
+	flex: 0 0 auto;
+	padding: 30px;
+	color: white;
+	background: #303030;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.azunyan{
+	position: fixed;
+	width: 200px;
+	height: 300px;
+	background-size: contain;
+	background-image: url(images/azunyan.png);
+	background-repeat: no-repeat;
+	bottom: 0;
+	left: 0;
+}
+
+.nepgear{
+	position: fixed;
+	width: 140px;
+	height: 250px;
+	background-size: contain;
+	background-image: url(images/nepgeart.png);
+	background-repeat: no-repeat;
+	bottom: 0;
+	right: 0;
+}
+
+
+@media(max-width: 1245px) {
+	body{
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media(max-width: 767px){
+	.main{
+		padding: 90px 10px 20px 10px;
+	}
+
+	.features{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.upload{
+		width: 100%;
+	}
+}
+
+@media(max-width: 600px){
+	.azunyan{
+		width: 64px;
+		height: 80px;
+	}
+
+	.nepgear{
+		width: 50px;
+		height: 90px;
+		bottom: -5px;
+		right: -5px;
+	}
+
+	.header{
+		height: 50px;
+	}
+
+
+}
