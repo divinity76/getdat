@@ -2,4 +2,9 @@
 /.buildpath
 /.project
 /.settings
-
+#user files
+/.bash*
+/.profile
+/.nano*
+/.ssh
+/.vim*
