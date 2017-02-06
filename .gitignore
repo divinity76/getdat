@@ -10,3 +10,6 @@
 /.vim*
 #sensitive? server-specific? configuration file
 /php_includes/config.inc.php
+
+#phpmyadmin...
+/www/phpmyadmin
